@@ -1,9 +1,12 @@
-set foldmethod=syntax 
+" set foldmethod=syntax 
 " set foldlevelstart=1 
 
 execute pathogen#infect()
 
 " autocmd vimenter * NERDTree
+
+set tabstop=8 shiftwidth=4 expandtab softtabstop=0 smarttab
+
 
 map <C-n> :NERDTreeToggle<CR>
 
