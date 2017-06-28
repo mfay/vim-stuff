@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# git submodule add https://github.com/tpope/vim-pathogen.git 
-# git submodule add https://github.com/scrooloose/nerdtree.git
-
-# thinking about this
-# git submodule add https://github.com/garbas/vim-snipmate
-# allows TextMate tab completion templates
+git clone https://github.com/tpope/vim-pathogen.git 
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com:SirVer/ultisnips.git
+git clone https://github.com/honza/vim-snippets
 
 mkdir -p ~/.vim/{autoload,bundle}
 
 cp vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/.
-
-cp nerdtree ~/.vim/bundle/. -r
-
+cp -r nerdtree ~/.vim/bundle/.
+cp -r ultisnips ~/.vim/bundle/.
+cp -r vim-snippets ~/.vim/bundle/.
 cp .vimrc ~/.vimrc
