@@ -15,3 +15,15 @@ else
   # or echo $PS1 for your environment. this was from windows.
 fi
 ```
+
+## Random notes
+supertab auto complete
+
+tComment
+
+brew install reattach-to-user-namespace
+
+.tmux.conf
+set -g default-shell $SHELL
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
+
